@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CINEFLEX | On Screen</title>
+    <meta name="description" content="CineFlex - see, what is on our screens now!">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="styles/indexstyle.css">
+    <link rel="stylesheet" href="styles/onscreen.css">
+    <style>
+        img {
+            /*width: 500px;*/
+            height: 100%;
+            display: block;
+        }
+    </style>
+</head>
+    <body>
+    <button id="overlay" onclick="closeMenu()"></button>
+    <header>
+        <a class="cineflex" href="index.html">cine<span>flex</span></a>
+        <a class="desktop_menu_link current_page" href="onscreen.html">on screen now</a>
+        <a class="desktop_menu_link">find theater</a>
+        <a class="last desktop_menu_link">upcoming movies</a>
+        <button id="open_menu" class="menu" onclick="closeOpen()">
+            <img id="menu_icn" src="resources/Menu_box.png">
+        </button>
+    </header>
+    <div id="menu-content">
+        <a class="mobile_menu_link current_page" href="onscreen.html">on screen now</a>
+        <a class="mobile_menu_link">find theater</a>
+        <a class="last-link-mobile mobile_menu_link">upcoming movies</a>
+    </div>
+    <script>
+        let isOpen = false;
+        function closeOpen() {
+            if (isOpen === false) {
+                openMenu();
+            }
+            else {
+                closeMenu();
+            }
+        }
+        function openMenu() {
+            {
+                document.getElementById("menu-content").style.display="flex";
+                document.getElementById("overlay").style.display="block";
+                document.getElementById("menu_icn").src="resources/Menu_box_close.png";
+                isOpen = true;
+            }
+        }
+        function closeMenu() {
+            document.getElementById("menu-content").style.display="none";
+            document.getElementById("overlay").style.display="none";
+            document.getElementById("menu_icn").src="resources/Menu_box.png";
+            isOpen = false;
+        }
+    </script>
+    <div id="slider" class="owl-carousel owl-theme slider">
+        <div class="item image_slider">
+            <img src="resources/IMG_0656.png">
+        </div>
+        <div class="item image_slider">
+            <img src="resources/IMG_0656.png">
+        </div>
+        <div class="item image_slider">
+            <img src="resources/IMG_0656.png">
+        </div>
+        <div class="item image_slider">
+            <img src="resources/IMG_0656.png">
+        </div>
+        <div class="item image_slider">
+            <img src="resources/IMG_0656.png">
+        </div>
+        <div class="item image_slider">
+            <img src="resources/IMG_0656.png">
+        </div>
+        <div class="item image_slider">
+            <img src="resources/IMG_0656.png">
+        </div>
+
+    </div>
+    <script type="text/javascript" src="node_modules/owl.carousel/docs/assets/vendors/jquery.min.js"></script>
+    <script src="node_modules/owl.carousel/dist/owl.carousel.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        $('.owl-carousel').owlCarousel({
+            autoplay:true,
+            autoplayTimeout:5000,
+            autoplayHoverPause:true,
+            loop:true,
+            margin:7,
+            nav:false,
+            responsive:{
+                0:{
+                    items:1
+
+                },
+                400:{
+                    items:3
+                }
+            }
+        })
+        $('.loop').owlCarousel({
+            center: true,
+            items:2,
+            loop:true,
+            margin:7,
+            responsive:{
+                0:{
+                    items:1
+
+                },
+                600:{
+                    items:4
+                }
+            }
+        });
+    </script>
+</body>
+</html>

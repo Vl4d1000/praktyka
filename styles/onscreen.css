@@ -1,0 +1,23 @@
+body {
+    height: auto;
+}
+div#slider {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    width: 160% !important;
+}
+@media screen and (min-height: 901px){
+
+}
+
+@media screen and (max-width: 900px){
+    div#slider {
+        width: 200% !important;
+    }
+}
+@media screen and (max-width: 500px){
+    div#slider {
+        width: 250% !important;
+    }
+}
