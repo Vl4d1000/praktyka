@@ -1,23 +1,109 @@
-body {
+body, html {
     height: auto;
+    width: 100% !important;
 }
 div#slider {
     display: flex;
     align-self: center;
     flex-direction: column;
-    width: 160% !important;
 }
-@media screen and (min-height: 901px){
+div.today_on_screen {
+    /*margin: 15px 32px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 130px;
+}
+div.movies_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: max-content;
 
 }
+div.movie {
+    margin: 20px 32px !important;
+}
+p.subheader {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 32px 32px 15px;
+}
+a.poster img, a.poster {
+    height: 350px;
+}
+a.title p {
+    margin: 10px 0 5px;
+    max-width: 235px;
+}
+p.genre {
+    margin: 5px 0 0 0;
+    opacity: 0.5;
+    color: #FFFFFF;
+}
+a.title p, p.genre {
+    text-transform: capitalize;
+}
+img#phone {
+    height: 70px;
+}
+div.contact-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px;
+    font-size: 22px;
+    background: #252731;
+}
+div#number_phone {
+    display: flex;
+    align-items: center;
+}
+#number_phone p {
+    width: 150px;
+}
 
-@media screen and (max-width: 900px){
-    div#slider {
-        width: 200% !important;
+/*@media screen and (min-width: 901px) and (max-width: 1499px){*/
+/*    div#slider {*/
+/*        width: 160% !important;*/
+/*    }*/
+/*}*/
+/*@media screen  and (min-width: 1500px){*/
+/*    div#slider {*/
+/*        width: 120% !important;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (max-width: 900px){*/
+/*    div#slider {*/
+/*        width: 200% !important;*/
+/*    }*/
+/*}*/
+@media screen and (max-width: 600px){
+    div.contact-info {
+        flex-direction: column;
+        font-size: 18px;
+        align-items: center;
     }
+    img#phone {
+        height: 50px;
+    }
+    #number_phone p {
+        width: 130px;
+    }
+
 }
+/*@media screen and (max-width: 500px){*/
+/*    div#slider {*/
+/*        width: 260% !important;*/
+/*    }*/
+/*}*/
 @media screen and (max-width: 500px){
-    div#slider {
-        width: 250% !important;
+    /*div#slider {*/
+    /*    width: 100% !important;*/
+    /*}*/
+    header {
+        margin-bottom: 15px !important;
     }
 }
