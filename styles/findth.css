@@ -1,8 +1,54 @@
-img.cineflex-wallpaper {
-    object-fit: contain;
-    width: 100%;
-    height: available;
+div.theater-list {
+    margin-left: 32px;
 }
-img#wp-2 {
-    display: none;
+div.theater {
+    margin-bottom: 50px;
+}
+div.theater h1.title {
+    font-weight: normal;
+    font-size: 40px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+div.theater p.address {
+    opacity: 0.6;
+    font-size: 23px;
+    color: #FFFFFF;
+    letter-spacing: 1.21px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+div.perks {
+    display: flex;
+    flex-direction: row;
+    max-width: 600px;
+    flex-wrap: wrap;
+}
+div.perks p {
+    margin: 0 15px 15px 0;
+    padding: 4px 20px;
+    border: 1.5px solid;
+    border-radius: 6px;
+
+}
+p.vip {
+    background: #FC6500;
+    border: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+p.classic {
+    background: #E6E6E6;
+    border: #898989;
+    color: black;
+}
+p.flex-cafe {
+    background: #FFFFFF;
+    border: #898989;
+    color: black;
+    font-weight: bold;
+}
+span.orange {
+    color: #FC6500;
+    text-transform: uppercase;
 }
