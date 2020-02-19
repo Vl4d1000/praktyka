@@ -52,3 +52,19 @@ span.orange {
     color: #FC6500;
     text-transform: uppercase;
 }
+@media screen and (max-width: 900px){
+    h1.huge-header {
+        font-size: 40px !important;
+    }
+    h1.title {
+        font-size: 30px !important;
+    }
+    p.address {
+        font-size: 23px !important;
+    }
+}
+@media screen and (max-width: 550px) {
+    #wp-2, #wp-1 {
+        display: none !important;
+    }
+}

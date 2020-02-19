@@ -21,7 +21,7 @@ h1.huge-header {
     font-weight: lighter;
     text-align: center;
     text-transform: capitalize;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 .current_page {
     color: #FC6500 !important;
@@ -245,7 +245,7 @@ div#number_phone {
         z-index: 5;
     }
     img#wp-2 {
-        display: block !important;
+        display: block;
     }
     img#wp-1 {
         display: none;
