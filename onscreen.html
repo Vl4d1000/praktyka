@@ -23,41 +23,19 @@
     <header>
         <a class="cineflex" href="index.html">cine<span>flex</span></a>
         <a class="desktop_menu_link current_page" href="onscreen.html">on screen now</a>
-        <a class="desktop_menu_link">find theater</a>
-        <a class="last desktop_menu_link">upcoming movies</a>
+        <a class="desktop_menu_link" href="findtheater.html">find theater</a>
+        <a class="last desktop_menu_link" href="liveflex.html">watch online</a>
         <button id="open_menu" class="menu" onclick="closeOpen()">
             <img id="menu_icn" src="resources/Menu_box.png">
         </button>
     </header>
     <div id="menu-content">
         <a class="mobile_menu_link current_page" href="onscreen.html">on screen now</a>
-        <a class="mobile_menu_link">find theater</a>
-        <a class="last-link-mobile mobile_menu_link">upcoming movies</a>
+        <a class="mobile_menu_link" href="findtheater.html">find theater</a>
+        <a class="last-link-mobile mobile_menu_link" href="liveflex.html">watch online</a>
     </div>
-    <script>
-        let isOpen = false;
-        function closeOpen() {
-            if (isOpen === false) {
-                openMenu();
-            }
-            else {
-                closeMenu();
-            }
-        }
-        function openMenu() {
-            {
-                document.getElementById("menu-content").style.display="flex";
-                document.getElementById("overlay").style.display="block";
-                document.getElementById("menu_icn").src="resources/Menu_box_close.png";
-                isOpen = true;
-            }
-        }
-        function closeMenu() {
-            document.getElementById("menu-content").style.display="none";
-            document.getElementById("overlay").style.display="none";
-            document.getElementById("menu_icn").src="resources/Menu_box.png";
-            isOpen = false;
-        }
+    <script src="js/menu.js">
+
     </script>
     <div id="slider" class="owl-carousel owl-theme slider">
         <div class="item image_slider">

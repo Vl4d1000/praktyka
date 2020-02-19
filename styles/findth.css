@@ -1,0 +1,8 @@
+img.cineflex-wallpaper {
+    object-fit: contain;
+    width: 100%;
+    height: available;
+}
+img#wp-2 {
+    display: none;
+}
